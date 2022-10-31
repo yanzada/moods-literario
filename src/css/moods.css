@@ -1,0 +1,112 @@
+.itemAvatar  {     
+    width:100% !important;  
+    height : 100% !important;  
+    max-width: 100px !important;  
+    max-height: 100px !important; 
+
+   
+    }
+
+.alignmentCenter{
+    width:fit-content;
+    margin:auto;
+    text-align:center;
+}
+
+.itemAvatar{
+    cursor:pointer;
+    position:relative;
+}
+
+.styleIcon{
+    color:#02b5a5;
+    position:absolute;
+    right:1px;
+    z-index:999;
+    top:1px;
+}
+
+.styleIconNone{
+    display:none;
+}
+
+.imgMood{
+    border: 1px solid black;
+}
+
+.selectedMood{
+    border: 2px solid #02b5a5;
+}
+
+.myModal{
+    
+   
+    height: 200px;
+    border-top:1px solid #ccc;
+    width:100%;
+    margin-bottom: -100px;
+    top: calc( 100% - 5rem ); /*100% - height*/
+    transition: all .3s ease;
+    will-change: top;
+}
+
+.cupertino-pane{
+    display:none;
+    margin-top:10px;
+    z-index:21;
+}
+
+.cupertino-pane-wrapper{
+    z-index:21;
+}
+
+.showMeBooks{
+    margin-top:0px;
+    float:right;
+    margin-right:50px;
+}
+
+.backgroundModalOpen{
+    background-color:#000;
+    opacity:0.5;
+}
+
+.blackout{
+    height:100%;
+    width:100%;
+    opacity:0.1;
+    position:fixed;
+    z-index:9999;
+}
+
+.backdrop{
+    width:1px!important;
+    height:1px!important;
+}
+
+.divPizzaOpen{
+    display:flex; 
+    margin-right: 5px;
+    margin-top: 40px;
+}
+
+.colorTextRed{
+    color:#cb1c1c;
+    font-weight:600;
+}
+
+.divPizzaClose{
+    display:none;
+}
+
+.scopeTitle{
+    font-family: 'Expletus Sans'; 
+    margin-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.lineScopeTitle{
+    height:2px;
+    width:20%;
+    background-color:#02b5a5;
+}
