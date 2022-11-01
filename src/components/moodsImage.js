@@ -3,7 +3,7 @@ const MoodsImage = [
     
     { src: 'img/love.png', text: 'Morrer de amores', fullText: 'Que tal um romance para aquecer esse coraçãozinho?' }, 
     { src: './img/exploradora.png',  text: 'Explorar novas culturas', fullText: 'Histórias que são narradas em diferentes culturas pra você viajar sem sair de casa' },
-    { src: './img/acao.png', text: 'Bang bang, mais ação (INVESTIGAÇÃO)', fullText: 'Quer tranquilidade vai pescar, aqui é só ação, aventura, porrada e correria' },
+    { src: './img/investigacao.png', text: 'Modo investigadora ativado com sucesso', fullText: 'Vamos investigar cada pista, cada crime e descobrir o culpado por trás?' },
     //{ src: './img/emocionar.png', text: 'Moço, eu quero me emocionar', fullText: 'Se você ama ser tocada por uma história ao ponto de derramar algumas lágrimas, esse é seu cantinho!' },
     { src: './img/nerd.png', text: 'Afim de aprender novas habilidades', fullText: 'Aqui é o espaço nerd. Perfeito para adquirir novos conhecimentos sobre os mais diversos assuntos.' },
    // { src: './img/medo.png', text: 'Se não for pra ficar tensa, nem quero!', fullText: 'Área reservada para quem busca experiências a flor da pele através de livros de suspense e terror.' },

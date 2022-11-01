@@ -12,10 +12,11 @@ import {
     IonIcon,
     IonButtons,
     IonPage,
+    IonButton,
   } from '@ionic/react';
   
   import React, {useState, useEffect} from 'react';
-  import { checkbox, menuOutline } from 'ionicons/icons';
+  import { ellipsisVerticalOutline, checkbox} from 'ionicons/icons';
   
   import { CupertinoPane } from "cupertino-pane";
   import FadeCupertino from '../components/myModal';
@@ -230,7 +231,7 @@ import RightMenu from '../components/rightMenu';
       }//end func
 
   
-      
+     
 
     return (
         <IonPage style={{backgroundColor:'#ccc', maxWidth: '500px', margin: 'auto', border: '1px solid #ccc'}}>
@@ -245,7 +246,7 @@ import RightMenu from '../components/rightMenu';
             <IonImg src="./img/logo-moods-white.png" style={{width: "140px", margin: 'auto'}} />
           
             <IonButtons slot="end">
-              <IonIcon style={{fontSize: '25px', marginRight: '10px', cursor: 'pointer'}} icon={menuOutline} onClick={toogleMenu} />
+              <IonIcon style={{fontSize: '25px', marginRight: '10px', cursor: 'pointer'}} icon={ellipsisVerticalOutline} onClick={toogleMenu} />
             </IonButtons>
 
           
