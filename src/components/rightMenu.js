@@ -25,9 +25,9 @@ function rightMenu({handleDragStart, destroyDrawer, toogleMenu, blackoutOpen, it
         <p style={{marginBottom: '0px', color: '#fff'}}><small>Próximas atualizações:</small></p>
         <p style={{marginTop:'0px'}}>+ 50 Livros, + 2 moods</p>
         </div>
-
+        {console.log(itensFav.length)}
         {itensFav.length === 0 ? (
-         
+        
           <div className="favoritos">
               <p className="meusFavoritos">Favoritos ({itensFav.length})</p>
               <AliceCarousel mouseTracking items={[<img src="./img/zero-favorito.jpg" onDragStart={handleDragStart} role="presentation" alt="Sem nenhum favorito" />]} />

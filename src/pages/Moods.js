@@ -12,7 +12,6 @@ import {
     IonIcon,
     IonButtons,
     IonPage,
-    IonButton,
   } from '@ionic/react';
   
   import React, {useState, useEffect} from 'react';
@@ -37,7 +36,6 @@ import RightMenu from '../components/rightMenu';
     const[currMood, setCurrMood] = useState({ src: 'img/love.png', text: 'Morrer de amores', fullText: 'Que tal um romance para aquecer esse coraçãozinho?' });
     const[countChat, setCountChat] = useState(0);
     const[textPizza, setTextPizza] = useState();
-    const[showModal, setShowModal] = useState(false);
     const [currIdMood, setCurrIdMood] = useState();
     const[blackoutOpen, setBlackoutOpen] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
@@ -45,49 +43,35 @@ import RightMenu from '../components/rightMenu';
     const handleDragStart = (e) => e.preventDefault();
  
 
-  //Draer UseEffect
- useEffect(() => {
-
-  
-  
-  if(showModal === false){
-    drawer = new CupertinoPane('.cupertino-pane', {
+  //Draer 
+  drawer = new CupertinoPane('.cupertino-pane', {
       breaks: {
            top: { enabled: false, offset: 700 },
            middle: { enabled: true, height: 200 },
-          
       }, 
       events: {
         onWillPresent: (ev) => {
-       
         },
         onDidDismiss: (ev) => {
-         
           let currActiveItem = document.querySelector('[iconOpen="true"]');
           let currActiveAvatar = document.querySelector('[avatarOpen="true"]');
-         
-
           currActiveItem.setAttribute('iconOpen', 'false');
           currActiveItem.classList.add('styleIconNone');
-
           currActiveAvatar.setAttribute('avatarOpen', 'false');
           currActiveAvatar.classList.remove("selectedMood");
            styleToogleModal(false)
-
         }
       },
       
      });//end drawer
 
-    }//if
- 
-  });//end useEffect
   
  
     
   //Pizza useEffect
    useEffect(() => {
 
+    console.log('pizza');
     if(countChat < 63){
       setTextPizza(TalkFlow[countChat]);
     }
@@ -117,6 +101,8 @@ import RightMenu from '../components/rightMenu';
     }
 
  }, [countChat]);
+
+
 
 
 
@@ -169,7 +155,6 @@ import RightMenu from '../components/rightMenu';
         btnDestroy.click();
        
       
-        setShowModal(true);
         styleToogleModal(true);
     
       };
